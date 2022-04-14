@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SideBarMenu1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="egu-a0-x4w">
+                                <rect key="frame" x="20" y="44" width="47" height="31"/>
+                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="line.3.horizontal" catalog="system"/>
+                                <connections>
+                                    <action selector="sideButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="paf-en-t6E"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hello" translatesAutoresizingMaskIntoConstraints="NO" id="Hdy-WF-F9P">
+                                <rect key="frame" x="20" y="132" width="374" height="209"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="HV2-IY-qiP"/>
+                                    <constraint firstAttribute="height" constant="209" id="XEV-xQ-ZUv"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Digital Health Passport " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5gE-eU-yx8">
+                                <rect key="frame" x="20" y="384" width="374" height="355"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="355" id="736-Lt-ysJ"/>
+                                    <constraint firstAttribute="height" constant="355" id="OYP-Kd-BOu"/>
+                                    <constraint firstAttribute="width" constant="374" id="Ybw-QA-6hp"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ihM-Ac-8yy">
+                                <rect key="frame" x="0.0" y="83" width="240" height="806"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5l7-XN-uhl">
+                                        <rect key="frame" x="21" y="36" width="194" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Home"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MkX-mb-Bg8">
+                                        <rect key="frame" x="21" y="75" width="194" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="QR Code"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IEl-AU-KAF">
+                                        <rect key="frame" x="21" y="114" width="194" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Covid Test Report"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ej-FO-N8v">
+                                        <rect key="frame" x="21" y="153" width="194" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Vaccination Report"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="wPc-T4-xmc"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5gE-eU-yx8" firstAttribute="top" secondItem="Hdy-WF-F9P" secondAttribute="bottom" constant="43" id="4eY-5t-EBL"/>
+                            <constraint firstItem="5gE-eU-yx8" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Lcb-Zh-8WI"/>
+                            <constraint firstAttribute="bottom" secondItem="ihM-Ac-8yy" secondAttribute="bottom" constant="7" id="NsO-73-tXL"/>
+                            <constraint firstItem="egu-a0-x4w" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Obi-YV-6eG"/>
+                            <constraint firstItem="egu-a0-x4w" firstAttribute="leading" secondItem="Hdy-WF-F9P" secondAttribute="leading" id="Qi0-BN-RHk"/>
+                            <constraint firstItem="ihM-Ac-8yy" firstAttribute="top" secondItem="egu-a0-x4w" secondAttribute="bottom" constant="8" symbolic="YES" id="Qz2-8y-iNw"/>
+                            <constraint firstItem="5gE-eU-yx8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TdM-5Q-Ftq"/>
+                            <constraint firstItem="ihM-Ac-8yy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gC0-hd-hDQ"/>
+                            <constraint firstItem="Hdy-WF-F9P" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hqM-9c-w44"/>
+                            <constraint firstItem="5gE-eU-yx8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kyM-1a-LHY"/>
+                            <constraint firstItem="egu-a0-x4w" firstAttribute="leading" secondItem="5gE-eU-yx8" secondAttribute="leading" id="l2V-6M-DfV"/>
+                            <constraint firstItem="5gE-eU-yx8" firstAttribute="trailing" secondItem="Hdy-WF-F9P" secondAttribute="trailing" id="nGb-Id-CzP"/>
+                            <constraint firstItem="egu-a0-x4w" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="oBZ-7T-WFj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5gE-eU-yx8" secondAttribute="bottom" constant="123" id="uYm-Gc-JqR"/>
+                            <constraint firstItem="Hdy-WF-F9P" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="whz-hK-J3U"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="sideMenuConstraint" destination="gC0-hd-hDQ" id="s97-Cr-QPM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="hello" width="612" height="408"/>
+        <image name="line.3.horizontal" catalog="system" width="128" height="64"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
